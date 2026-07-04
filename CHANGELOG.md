@@ -40,9 +40,11 @@ next steps:
 worked on:
 
 - added logging to `benchmark.py` and `provider/gemini.py`
+- created github repo and pushed changes
 
 what i learned:
 
 - learnt the use of logging
+- learnt to use github
 
 next steps:
