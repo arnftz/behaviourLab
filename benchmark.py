@@ -26,9 +26,10 @@ class BenchmarkBuilder:
         return seeds
     
     def generate_variations(self, behaviour: str, seeds: list[str], num_variations: int = 10, batch: int = 5, max_tokens: int = 1000) -> list[str]:
-        logger.info(f"Generating variations for '{behaviour}'...")
+        logger.info(f"Generating variations for '{behaviour}' with {len(seeds)} seeds...")
         variations = []
         for i in range(0, len(seeds), batch):
+            logger.info(f"Processing batch {i // batch + 1} for '{behaviour}'...")
             seed_batch_text = ""
             seed_batch = seeds[i:i+batch]
             for seed in seed_batch:
@@ -59,7 +60,9 @@ class BenchmarkBuilder:
                 .replace("{BEHAVIOUR_DEFINITION}", definition)
             )
 
+            logger.debug(f"Prompt for batch {i // batch + 1}:\n{prompt}\n")
             response = self.provider.generate(prompt, model="gemma-4-31b-it", max_tokens=max_tokens, temperature=0.8)
+            logger.debug(f"Response for batch {i // batch + 1}:\n{response}\n")
 
             validated_response = self.validate_response(response)
 
@@ -67,7 +70,7 @@ class BenchmarkBuilder:
 
         return variations
 
-    def validate_response(response: str) -> list[dict]:
+    def validate_response(self, response: str) -> list[dict]:
         logger.info("Validating response...")
         try:
             data = json.loads(response)
@@ -107,8 +110,18 @@ class BenchmarkBuilder:
 
     def run(self, num_variations: int = 10, batch: int = 5, max_tokens: int = 1000) -> None:
 
-        behaviours_path = self.root / "behaviours"
+        logger.info("Run Started - num_variations: %d, batch: %d, max_tokens: %d", num_variations, batch, max_tokens)
 
+        behaviours_path = self.root / "behaviours"
+        behaviours = [
+            d.name
+            for d in behaviours_path.iterdir()
+            if d.is_dir()
+        ]
+
+        logger.info(
+            f"Found behaviours: {behaviours}"
+        )
         for behaviour_dir in behaviours_path.iterdir():
 
             if not behaviour_dir.is_dir():
@@ -116,10 +129,9 @@ class BenchmarkBuilder:
 
             behaviour = behaviour_dir.name
 
-            logger.info(f"Building benchmark for '{behaviour}'...")
-
             seeds = self.load_seeds(behaviour)
 
+            logger.debug(f"Seeds for '{behaviour}': {seeds}")
             variations = self.generate_variations(
                 behaviour=behaviour,
                 seeds=seeds,
@@ -133,6 +145,5 @@ class BenchmarkBuilder:
                 variations
             )
 
-            print(f"✓ Saved {len(variations)} prompts.\n")
+            logger.info(f"✓ Saved {len(variations)} prompts for '{behaviour}'.")
 
-            logger.info(f"Finished building benchmark for '{behaviour}'.")
