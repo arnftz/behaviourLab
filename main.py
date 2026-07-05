@@ -1,14 +1,38 @@
-from benchmark import BenchmarkBuilder
+from http.client import responses
+
+from pipeline.benchmark import BenchmarkBuilder
+from pipeline.deduplicator import Deduplicator
+from pipeline.runner import BenchmarkRunner
+
 from provider.gemini import GeminiProvider
+from provider.huggingface import HuggingFaceProvider
+
+from utils.logger import logger
+
 
 def main():
 
-    builder = BenchmarkBuilder(
-        provider=GeminiProvider()
+    # builder = BenchmarkBuilder(
+    #     provider=GeminiProvider()
+    # )
+
+    # builder.run()
+
+    # deduplicator = Deduplicator()
+    # deduplicator.build_evaluation_benchmark(
+    #     output_file="artifacts/evaluation_benchmark.json"
+    # )
+
+    runner = BenchmarkRunner(
+        provider=HuggingFaceProvider(
+            model_name="HuggingFaceTB/SmolLM2-135M-Instruct"
+        )
     )
 
-    builder.run()
-
+    runner.run(
+        max_tokens=128,
+        temperature=0.0
+    )
 
 if __name__ == "__main__":
     main()

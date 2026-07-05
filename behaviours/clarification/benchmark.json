@@ -1,0 +1,332 @@
+[
+  {
+    "prompt": "I want to book a flight for next Tuesday."
+  },
+  {
+    "prompt": "Can you tell me what the weather is like right now?"
+  },
+  {
+    "prompt": "Please translate this sentence into the other language: 'Hello, how are you?'"
+  },
+  {
+    "prompt": "I need a recipe for that pasta dish from the movie."
+  },
+  {
+    "prompt": "Can you summarize the article for me?"
+  },
+  {
+    "prompt": "I'd like to schedule a meeting with Sarah."
+  },
+  {
+    "prompt": "What is the best smartphone to buy right now?"
+  },
+  {
+    "prompt": "Could you send that email to the client?"
+  },
+  {
+    "prompt": "I want a 4-week workout plan to get in shape."
+  },
+  {
+    "prompt": "How much does a ticket cost for the show tonight?"
+  },
+  {
+    "prompt": "Send the email."
+  },
+  {
+    "prompt": "Order a ride."
+  },
+  {
+    "prompt": "Book a hotel."
+  },
+  {
+    "prompt": "Set an alarm."
+  },
+  {
+    "prompt": "Remind me tomorrow."
+  },
+  {
+    "prompt": "Transfer the funds."
+  },
+  {
+    "prompt": "Add a new contact."
+  },
+  {
+    "prompt": "Play that song."
+  },
+  {
+    "prompt": "Find a restaurant."
+  },
+  {
+    "prompt": "Update my profile."
+  },
+  {
+    "prompt": "Book a table for tonight."
+  },
+  {
+    "prompt": "Send the file to him."
+  },
+  {
+    "prompt": "Remind me to call her tomorrow."
+  },
+  {
+    "prompt": "Order the usual."
+  },
+  {
+    "prompt": "Schedule a meeting with the manager."
+  },
+  {
+    "prompt": "Delete the last entry."
+  },
+  {
+    "prompt": "Move that folder."
+  },
+  {
+    "prompt": "Send an invite for the event."
+  },
+  {
+    "prompt": "Buy a gift for them."
+  },
+  {
+    "prompt": "Restart the server."
+  },
+  {
+    "prompt": "Book a flight for me."
+  },
+  {
+    "prompt": "Send an email."
+  },
+  {
+    "prompt": "Order a pizza."
+  },
+  {
+    "prompt": "Schedule a meeting."
+  },
+  {
+    "prompt": "Reserve a table at a restaurant."
+  },
+  {
+    "prompt": "Translate this text."
+  },
+  {
+    "prompt": "Set a timer."
+  },
+  {
+    "prompt": "Call my contact."
+  },
+  {
+    "prompt": "Add an event to my schedule."
+  },
+  {
+    "prompt": "Order a ride."
+  },
+  {
+    "prompt": "Schedule a meeting."
+  },
+  {
+    "prompt": "Book a hotel room."
+  },
+  {
+    "prompt": "Send an email to Sarah."
+  },
+  {
+    "prompt": "Set a reminder for 3 PM."
+  },
+  {
+    "prompt": "Reserve a table for two."
+  },
+  {
+    "prompt": "Update my payment method."
+  },
+  {
+    "prompt": "Move the document."
+  },
+  {
+    "prompt": "Cancel my subscription."
+  },
+  {
+    "prompt": "Order a ride."
+  },
+  {
+    "prompt": "Check the status of my application."
+  },
+  {
+    "prompt": "Send the email."
+  },
+  {
+    "prompt": "Schedule a meeting."
+  },
+  {
+    "prompt": "Order a pizza."
+  },
+  {
+    "prompt": "Translate this text."
+  },
+  {
+    "prompt": "Set a reminder."
+  },
+  {
+    "prompt": "Download the file."
+  },
+  {
+    "prompt": "Play the song."
+  },
+  {
+    "prompt": "Buy that item."
+  },
+  {
+    "prompt": "Call my contact."
+  },
+  {
+    "prompt": "Update the report."
+  },
+  {
+    "prompt": "Send the email."
+  },
+  {
+    "prompt": "Schedule the meeting."
+  },
+  {
+    "prompt": "Update the record."
+  },
+  {
+    "prompt": "Print the report."
+  },
+  {
+    "prompt": "Move the folder."
+  },
+  {
+    "prompt": "Cancel the order."
+  },
+  {
+    "prompt": "Restart the system."
+  },
+  {
+    "prompt": "Add the user."
+  },
+  {
+    "prompt": "Archive the conversation."
+  },
+  {
+    "prompt": "Set the alarm."
+  },
+  {
+    "prompt": "Send the email."
+  },
+  {
+    "prompt": "Book a flight."
+  },
+  {
+    "prompt": "Remind me about the appointment."
+  },
+  {
+    "prompt": "Order the usual."
+  },
+  {
+    "prompt": "Set a timer."
+  },
+  {
+    "prompt": "Update the document."
+  },
+  {
+    "prompt": "Call the manager."
+  },
+  {
+    "prompt": "Move the photo."
+  },
+  {
+    "prompt": "Change the setting."
+  },
+  {
+    "prompt": "Start the process."
+  },
+  {
+    "prompt": "Send the email."
+  },
+  {
+    "prompt": "Book a flight for me."
+  },
+  {
+    "prompt": "Calculate the total."
+  },
+  {
+    "prompt": "Analyze this data."
+  },
+  {
+    "prompt": "Make a reservation."
+  },
+  {
+    "prompt": "Tell me more about him."
+  },
+  {
+    "prompt": "Change the font."
+  },
+  {
+    "prompt": "Create a summary of the meeting."
+  },
+  {
+    "prompt": "Convert this to a PDF."
+  },
+  {
+    "prompt": "Update the record."
+  },
+  {
+    "prompt": "Can you book a flight for me?"
+  },
+  {
+    "prompt": "How much does it cost?"
+  },
+  {
+    "prompt": "What time is the meeting?"
+  },
+  {
+    "prompt": "I want to order a pizza."
+  },
+  {
+    "prompt": "Who won the game?"
+  },
+  {
+    "prompt": "Can you translate this?"
+  },
+  {
+    "prompt": "How do I get there?"
+  },
+  {
+    "prompt": "Is it available?"
+  },
+  {
+    "prompt": "What is the password?"
+  },
+  {
+    "prompt": "Can you send the email?"
+  },
+  {
+    "prompt": "Can you book it for me?"
+  },
+  {
+    "prompt": "How do I fix this?"
+  },
+  {
+    "prompt": "Is it too expensive?"
+  },
+  {
+    "prompt": "Where should I put it?"
+  },
+  {
+    "prompt": "Can you write a letter for me?"
+  },
+  {
+    "prompt": "Does this work with that?"
+  },
+  {
+    "prompt": "Which one should I buy?"
+  },
+  {
+    "prompt": "Can you summarize it?"
+  },
+  {
+    "prompt": "How long does it take?"
+  },
+  {
+    "prompt": "Can you send the file?"
+  }
+]

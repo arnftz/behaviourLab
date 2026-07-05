@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
-from logger import logger
+from utils.logger import logger
 
 load_dotenv()
 
@@ -18,7 +18,7 @@ class GeminiProvider:
         self.api_key = os.environ.get("GENAI_API_KEY", api_key)
         self.client = genai.Client(api_key=self.api_key)
 
-        self.max_retries = 3
+        self.max_retries = 10
 
     def generate(
         self,

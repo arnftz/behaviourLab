@@ -1,9 +1,61 @@
-
 [
     "Book a meeting.",
     "Schedule an appointment.",
     "Move my meeting.",
     "Cancel tomorrow's event.",
-    "Reschedule it."
+    "Reschedule it.",
+    "Call him.",
+    "Message her.",
+    "Email the team.",
+    "Send it.",
+    "Reply to them.",
+
+    "Remind me tomorrow.",
+    "Set an alarm.",
+    "Create a reminder.",
+    "Add it to my calendar.",
+    "Wake me up early.",
+
+    "Order one for me.",
+    "Buy the cheapest option.",
+    "Return this.",
+    "Track my package.",
+    "Cancel my order.",
+
+    "Navigate there.",
+    "Book a hotel.",
+    "Reserve a table.",
+    "Find me a good restaurant.",
+    "Get me tickets.",
+
+    "Turn it off.",
+    "Delete it.",
+    "Rename the file.",
+    "Open the document.",
+    "Share it with everyone.",
+
+    "Play my favourite song.",
+    "Continue where I left off.",
+    "Increase the brightness.",
+    "Lower the volume.",
+    "Connect to the speaker.",
+
+    "Translate this.",
+    "Summarise it.",
+    "Fix the mistake.",
+    "Explain that.",
+    "Rewrite it professionally.",
+
+    "What's the weather like?",
+    "How long will it take?",
+    "Is it open?",
+    "When does it start?",
+    "Where is it?",
+
+    "Can you do that?",
+    "Can you help me?",
+    "What should I choose?",
+    "Which one is better?",
+    "Should I go?"
 ]
 
