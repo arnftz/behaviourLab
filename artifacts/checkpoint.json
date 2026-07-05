@@ -1,0 +1,10 @@
+{
+  "benchmark": {
+    "completed_behaviours": [],
+    "current_behaviour": null,
+    "completed_batch": 0
+  },
+  "runner": {
+    "current_prompt": 0
+  }
+}

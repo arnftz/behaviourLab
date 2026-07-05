@@ -23,6 +23,11 @@ class Checkpoint:
                     "current_behaviour": None,
                     "completed_batch": 0
                 },
+                "evaluator": {
+                    "completed_behaviours": [],
+                    "current_behaviour": None,
+                    "completed_batch": 0
+                },
                 "runner": {
                     "current_prompt": 0
                 }
@@ -30,6 +35,17 @@ class Checkpoint:
 
         with open(self.path, "r", encoding="utf-8") as f:
             checkpoint = json.load(f)
+
+        checkpoint.setdefault(
+            "evaluator",
+            {
+                "completed_behaviours": [],
+                "current_behaviour": None,
+                "completed_batch": 0
+            }
+        )
+
+        checkpoint["evaluator"].setdefault("completed_behaviours", [])
 
         logger.debug(f"Checkpoint:\n{checkpoint}")
 
@@ -41,7 +57,7 @@ class Checkpoint:
 
         logger.debug(f"Checkpoint:\n{checkpoint}")
 
-        self.path.parent.mkdir(exist_ok=True)
+        self.path.parent.mkdir(parents=True, exist_ok=True)
 
         with open(self.path, "w", encoding="utf-8") as f:
             json.dump(
