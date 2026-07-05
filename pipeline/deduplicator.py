@@ -119,9 +119,13 @@ class Deduplicator:
         logger.debug(f"After semantic deduplication: {benchmarks}")
 
         evaluation_benchmark = []
+
         for behaviour, prompts in benchmarks.items():
-            for item in prompts:
+
+            for index, item in enumerate(prompts, start=1):
+
                 evaluation_benchmark.append({
+                    "id": f"{behaviour}_{index:04d}",
                     "behaviour": behaviour,
                     "prompt": item["prompt"]
                 })
